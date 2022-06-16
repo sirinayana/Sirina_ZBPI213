@@ -37,11 +37,11 @@ def is_palindrome(string):
     a, b = 0, len(string) - 1
     flag = "YES"
     while a < b:
-        while not string[a].isalpha():
+        while not s[a].isalpha():
             a += 1
-        while not string[b].isalpha():
+        while not s[b].isalpha():
             b -= 1
-        if string[a] != string[b]:
+        if s[a] != s[b]:
             flag = "NO"
             break
         else:
